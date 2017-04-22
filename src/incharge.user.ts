@@ -5,56 +5,96 @@
 // @author       https://github.com/ezhmd
 // @match        https://projects.invisionapp.com/*
 // @grant        none
-// @require      http://code.jquery.com/jquery-2.2.4.min.js
 // ==/UserScript==
 
+interface inchargeAction {
+    name: string;
+    position: ['projects', 'prototypes']
+}
+
 (function() {
-    // Set universal incharge variable
+    // UI Template
 
-    let incharge: any = {};
-    (<any> window).incharge = incharge;
-
-    // UI template
-
-    incharge.uiTemplate = `
+    let uiTemplate = `
     <div id="inchargeUI">
-        <button onclick="incharge.functions.collapseAll()" type="button">Collapse All</button>
-        <button onclick="incharge.functions.expandAll()" type="button">Expand All</button>
+        <div id="inchargeActions">
+        </div>
     </div>
     `;
 
     // UI Styles
 
-    incharge.uiStyle = `
+    let uiStyle = `
     <style>
         #inchargeUI {
             position: fixed;
-            background: white;
+            right: 10px;
+            top: 10px;
             z-index: 1000;
-            right: 0;
-            top: 0;
+
+            border-radius: 5px;
+            box-shadow: 0px 2px 5px rgba(0,0,0,0.07);
+
+            background: white;
+        }
+
+        #inchargeActions {
+            display: flex;
+            padding: 5px;
+            flex-direction: column;
+        }
+
+        #inchargeActions > button{
+            margin: 5px 0px;
         }
     </style>
     `;
 
-    // Functions
-
-    incharge.functions = {};
-
-    incharge.functions.collapseAll = function() {
-        $('.collapse').each( function() {
-            this.click()
-        });
+    // Helper Functions
+    
+    function forEach (array: any, callback: any, scope?: any) {
+        for (var i = 0; i < array.length; i++) {
+            callback.call(scope, i, array[i]);
+        }
     };
 
-    incharge.functions.expandAll = function() {
-        $('.expand').each( function() {
-            this.click()
-        });
+    // InCharge Actions!!
+
+    let incharge: any = {};
+    (<any> window).incharge = incharge;
+
+    incharge.collapseAll  = {
+        name    : "Collapse All Sections",
+        page    : "prototypes",
+        action  : function() {
+            forEach(document.querySelectorAll('.collapse'), (index: any, value: any) => {
+                value.click();
+            });
+        }
     };
 
-    // Execute
+    incharge.expandAll = {
+        name    : "Expand All Sections",
+        page    : "prototypes",
+        action  : function() {
+            forEach(document.querySelectorAll('.collapse'), (index: any, value: any) => {
+                value.click();
+            });
+        }
+    }
 
-        $(incharge.uiTemplate).prependTo($('body'));
-        $(incharge.uiStyle).prependTo($('body'));
+    // Add UI to body
+
+    document.body.insertAdjacentHTML('afterbegin', uiStyle + uiTemplate);
+
+    // Append incharge actions to the UI
+
+    Object.keys(incharge).forEach(function(key) {
+        document
+            .getElementById('inchargeActions')
+            .insertAdjacentHTML(
+                'beforeend', 
+                `<button onclick="incharge.${key}.action()">${incharge[key].name}</button>`
+                )
+    });
 })();
