@@ -17,7 +17,9 @@ interface inchargeAction {
 
     let uiTemplate = `
     <div id="inchargeUI">
-        <div id="inchargeActions">
+        <div class="incharge-title">InCharge⚡️</div>
+        <div id="inchargeDropdown">
+            <p>with ❤️ by ezhmd</p> 
         </div>
     </div>
     `;
@@ -26,25 +28,52 @@ interface inchargeAction {
 
     let uiStyle = `
     <style>
-        #inchargeUI {
+        #inchargeUI 
+        {
             position: fixed;
             right: 10px;
             top: 10px;
             z-index: 1000;
+        }
+        
+        .incharge-title 
+        {
+            border-radius: 5px;
+
+            padding: 5px;
+            color: white;
+
+            width: 80px;
+            margin-left: auto;
+
+            font-weight: bold;
+            text-align: center;
+
+            box-shadow: 0px 2px 5px rgba(0,0,0,0.07);
+
+            background: #ff3366;
+        }
+        .incharge-title:hover ~ #inchargeDropdown, 
+        #inchargeDropdown:hover 
+        {
+            display: flex;
+        }
+        
+        #inchargeDropdown 
+        {
+            display: none;
+            padding: 5px;
+            flex-direction: column;
 
             border-radius: 5px;
             box-shadow: 0px 2px 5px rgba(0,0,0,0.07);
-
+            text-align: center;
+            
             background: white;
         }
 
-        #inchargeActions {
-            display: flex;
-            padding: 5px;
-            flex-direction: column;
-        }
-
-        #inchargeActions > button{
+        #inchargeDropdown > button
+        {
             margin: 5px 0px;
         }
     </style>
@@ -91,9 +120,9 @@ interface inchargeAction {
 
     Object.keys(incharge).forEach(function(key) {
         document
-            .getElementById('inchargeActions')
+            .getElementById('inchargeDropdown')
             .insertAdjacentHTML(
-                'beforeend', 
+                'afterbegin', 
                 `<button onclick="incharge.${key}.action()">${incharge[key].name}</button>`
                 )
     });

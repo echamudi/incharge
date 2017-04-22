@@ -8,9 +8,9 @@
 // ==/UserScript==
 (function () {
     // UI Template
-    var uiTemplate = "\n    <div id=\"inchargeUI\">\n        <div id=\"inchargeActions\">\n        </div>\n    </div>\n    ";
+    var uiTemplate = "\n    <div id=\"inchargeUI\">\n        <div class=\"incharge-title\">InCharge\u26A1\uFE0F</div>\n        <div id=\"inchargeDropdown\">\n            <p>with \u2764\uFE0F by ezhmd</p> \n        </div>\n    </div>\n    ";
     // UI Styles
-    var uiStyle = "\n    <style>\n        #inchargeUI {\n            position: fixed;\n            right: 10px;\n            top: 10px;\n            z-index: 1000;\n\n            border-radius: 5px;\n            box-shadow: 0px 2px 5px rgba(0,0,0,0.07);\n\n            background: white;\n        }\n\n        #inchargeActions {\n            display: flex;\n            padding: 5px;\n            flex-direction: column;\n        }\n\n        #inchargeActions > button{\n            margin: 5px 0px;\n        }\n    </style>\n    ";
+    var uiStyle = "\n    <style>\n        #inchargeUI \n        {\n            position: fixed;\n            right: 10px;\n            top: 10px;\n            z-index: 1000;\n        }\n        \n        .incharge-title \n        {\n            border-radius: 5px;\n\n            padding: 5px;\n            color: white;\n\n            width: 80px;\n            margin-left: auto;\n\n            font-weight: bold;\n            text-align: center;\n\n            box-shadow: 0px 2px 5px rgba(0,0,0,0.07);\n\n            background: #ff3366;\n        }\n        .incharge-title:hover ~ #inchargeDropdown, \n        #inchargeDropdown:hover \n        {\n            display: flex;\n        }\n        \n        #inchargeDropdown \n        {\n            display: none;\n            padding: 5px;\n            flex-direction: column;\n\n            border-radius: 5px;\n            box-shadow: 0px 2px 5px rgba(0,0,0,0.07);\n            text-align: center;\n            \n            background: white;\n        }\n\n        #inchargeDropdown > button\n        {\n            margin: 5px 0px;\n        }\n    </style>\n    ";
     // Helper Functions
     function forEach(array, callback, scope) {
         for (var i = 0; i < array.length; i++) {
@@ -44,7 +44,7 @@
     // Append incharge actions to the UI
     Object.keys(incharge).forEach(function (key) {
         document
-            .getElementById('inchargeActions')
-            .insertAdjacentHTML('beforeend', "<button onclick=\"incharge." + key + ".action()\">" + incharge[key].name + "</button>");
+            .getElementById('inchargeDropdown')
+            .insertAdjacentHTML('afterbegin', "<button onclick=\"incharge." + key + ".action()\">" + incharge[key].name + "</button>");
     });
 })();
