@@ -1,4 +1,4 @@
-# incharge⚡️
+# InCharge⚡️
 
 Recharge InVision App with additional features
 
