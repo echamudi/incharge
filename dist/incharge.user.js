@@ -34,7 +34,7 @@
         name: "Expand All Sections",
         page: "prototypes",
         action: function () {
-            forEach(document.querySelectorAll('.collapse'), function (index, value) {
+            forEach(document.querySelectorAll('.expand'), function (index, value) {
                 value.click();
             });
         }

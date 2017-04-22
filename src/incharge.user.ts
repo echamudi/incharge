@@ -77,7 +77,7 @@ interface inchargeAction {
         name    : "Expand All Sections",
         page    : "prototypes",
         action  : function() {
-            forEach(document.querySelectorAll('.collapse'), (index: any, value: any) => {
+            forEach(document.querySelectorAll('.expand'), (index: any, value: any) => {
                 value.click();
             });
         }
