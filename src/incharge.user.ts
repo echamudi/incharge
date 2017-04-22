@@ -18,6 +18,7 @@ interface inchargeAction {
     let uiTemplate = `
     <div id="inchargeUI">
         <div class="incharge-title">InCharge⚡️</div>
+        <div class="incharge-title-margin-bottom"></div>
         <div id="inchargeDropdown">
             <p>with ❤️ by ezhmd</p> 
         </div>
@@ -53,14 +54,14 @@ interface inchargeAction {
 
             background: #ff3366;
         }
-        .incharge-title:hover ~ #inchargeDropdown, 
-        #inchargeDropdown:hover 
-        {
-            display: flex;
+
+        .incharge-title-margin-bottom {
+            height: 5px;
         }
         
         #inchargeDropdown 
         {
+            display: flex;
             display: none;
             padding: 5px;
             flex-direction: column;
@@ -76,6 +77,14 @@ interface inchargeAction {
         {
             margin: 5px 0px;
         }
+
+        .incharge-title:hover ~ #inchargeDropdown, 
+        .incharge-title-margin-bottom:hover  ~ #inchargeDropdown, 
+        #inchargeDropdown:hover 
+        {
+            display: flex;
+        }
+
     </style>
     `;
 
