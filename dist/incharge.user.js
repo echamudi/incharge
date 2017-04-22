@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         Incharge
 // @namespace    http://tampermonkey.net/
-// @version      0.3
+// @version      0.4
 // @description  Recharge InVision App with additional features
 // @author       https://github.com/ezhmd
 // @match        https://projects.invisionapp.com/*
@@ -9,5 +9,6 @@
 // ==/UserScript==
 (function () {
     'use strict';
-    alert("incharge is running!");
+
+    console.log('InCharge is running!')
 })();
