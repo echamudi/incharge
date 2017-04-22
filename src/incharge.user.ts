@@ -20,7 +20,9 @@ interface inchargeAction {
         <div class="incharge-title">InCharge⚡️</div>
         <div class="incharge-title-margin-bottom"></div>
         <div id="inchargeDropdown">
-            <p>with ❤️ by ezhmd</p> 
+            <p>with ❤️ by 
+                <a href="https://github.com/ezhmd" target="_blank">ezhmd</a>
+            </p> 
         </div>
     </div>
     `;
