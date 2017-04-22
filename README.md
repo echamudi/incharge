@@ -1,6 +1,6 @@
 # InCharge⚡️
 
-> This project is under heavy development.
+> This project hasn't been finished yet.
 
 Recharge InVision App with additional features
 
@@ -24,8 +24,9 @@ I'm a UI designer and I use InVision App a lot. InVision App is a great tool for
 - Wider filename label (coming soon)
 - Wider section rename text input (coming soon)
 
-## Creator
+## Installation
 
+Use tampermonkey
 
 ## Creator
 

@@ -1,6 +1,6 @@
 // ==UserScript==
 // @name         InCharge
-// @version      0.6
+// @version      0.7
 // @description  Recharge InVision App with additional features
 // @author       https://github.com/ezhmd
 // @match        https://projects.invisionapp.com/*
@@ -87,6 +87,13 @@ interface inchargeAction {
             display: flex;
         }
 
+        .incharge-button {
+            display: none;
+        }
+
+        .page_project .incharge-display-project {
+            display: block;
+        }
     </style>
     `;
 
@@ -105,7 +112,7 @@ interface inchargeAction {
 
     incharge.collapseAll  = {
         name    : "Collapse All Sections",
-        page    : "prototypes",
+        page    : "project",
         action  : function() {
             forEach(document.querySelectorAll('.collapse'), (index: any, value: any) => {
                 value.click();
@@ -115,7 +122,7 @@ interface inchargeAction {
 
     incharge.expandAll = {
         name    : "Expand All Sections",
-        page    : "prototypes",
+        page    : "project",
         action  : function() {
             forEach(document.querySelectorAll('.expand'), (index: any, value: any) => {
                 value.click();
@@ -129,12 +136,14 @@ interface inchargeAction {
 
     // Append incharge actions to the UI
 
-    Object.keys(incharge).forEach(function(key) {
+    Object.keys(incharge).forEach(key => {
         document
             .getElementById('inchargeDropdown')
             .insertAdjacentHTML(
                 'afterbegin', 
-                `<button onclick="incharge.${key}.action()">${incharge[key].name}</button>`
+                `<button class="incharge-button incharge-display-${incharge[key].page}" onclick="incharge.${key}.action()">
+                    ${incharge[key].name}
+                </button>`
                 )
     });
 })();
