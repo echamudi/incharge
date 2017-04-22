@@ -1,5 +1,5 @@
 // ==UserScript==
-// @name         Incharge
+// @name         InCharge
 // @version      0.6
 // @description  Recharge InVision App with additional features
 // @author       https://github.com/ezhmd
