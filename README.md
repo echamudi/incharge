@@ -6,7 +6,7 @@ Recharge InVision App with additional features
 
 ## What?
 
-I'm a UI designer and I use InVision App a lot. InVision App is a great tool for making prototypes but there are some missing useful features in its UI. This project contains several hacks that will save my (and your) time in InVision App.
+I'm a UI designer and I use InVision App a lot. InVision App is a great tool for making prototypes but there are some missing useful features in its UI. This project contains several hacks that will save my (and might be your) time in InVision App.
 
 ## The Hacks
 
@@ -23,7 +23,7 @@ I'm a UI designer and I use InVision App a lot. InVision App is a great tool for
 - No transition (switchable)_(coming soon)_
 - Wider filename label _(coming soon)_
 - Wider section rename text input _(coming soon)_
-- Download current image_(coming soon)_
+- Download current image _(coming soon)_
 
 ## Installation
 
