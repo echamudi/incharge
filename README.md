@@ -19,15 +19,17 @@ I'm a UI designer and I use InVision App a lot. InVision App is a great tool for
 ### UI Fixes
 
 - Always displayed section tools (switchable) _(coming soon)_
-- Always displayed project-sync (switchable)_(coming soon)_
-- No transition (switchable)_(coming soon)_
+- Always displayed project-sync (switchable) _(coming soon)_
+- No transition (switchable) _(coming soon)_
 - Wider filename label _(coming soon)_
 - Wider section rename text input _(coming soon)_
 - Download current image _(coming soon)_
 
 ## Installation
 
-Use tampermonkey
+1. Install tampermonkey
+2. Open dist/incharge.user.js from gtihub
+3. Click install
 
 ## Creator
 
