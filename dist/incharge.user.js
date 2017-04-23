@@ -104,6 +104,7 @@ var Actions = (function () {
     Actions.prototype.registerAction = function (action) {
         this.actions.push(action);
         this.inchargeFunctions[action.id] = action.method;
+        return this;
     };
     Actions.prototype.render = function () {
         console.log(this.actions);
@@ -144,10 +145,11 @@ exports.forEach = forEach;
 Object.defineProperty(exports, "__esModule", { value: true });
 var actions_class_1 = __webpack_require__(2);
 var functions_1 = __webpack_require__(3);
+// Load SCSS and HTML
 var uiTemplate = __webpack_require__(1);
 var uiStyle = __webpack_require__(0);
 // Add UI to body
-document.body.insertAdjacentHTML('afterbegin', "\n    <style>" + uiStyle + "</style>\n    " + uiTemplate + "\n");
+document.body.insertAdjacentHTML('afterbegin', "\n    <style>\n        " + uiStyle + "\n    </style>\n    " + uiTemplate + "\n");
 // InCharge Actions!!
 var actions = new actions_class_1.Actions();
 actions
@@ -160,8 +162,7 @@ actions
             value.click();
         });
     }
-});
-actions
+})
     .registerAction({
     id: "expandAll",
     label: "Expand All Sections",

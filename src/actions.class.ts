@@ -9,12 +9,13 @@ export class Actions {
         (<any> window).inchargeFunctions = this.inchargeFunctions;
     };
 
-    public registerAction(action: action) {
+    public registerAction(action: action): this {
         this.actions.push(action);
         this.inchargeFunctions[action.id] = action.method;
+        return this;
     }
 
-    public render() {
+    public render(): void {
         console.log(this.actions);
         console.log(this.inchargeFunctions);
         

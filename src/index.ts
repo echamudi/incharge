@@ -34,9 +34,7 @@ actions
                 });
             }
         }    
-    );
-
-actions
+    )
     .registerAction(
         {
             id      : "expandAll",
