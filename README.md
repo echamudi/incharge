@@ -1,5 +1,7 @@
 # InCharge⚡️
 
+![InCharge Logo](docs/logo/logo-incharge.svg)
+
 Recharge InVision App with additional features
 
 ## What?
