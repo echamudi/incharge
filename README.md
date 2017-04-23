@@ -1,6 +1,6 @@
 # InCharge⚡️
 
-![InCharge Logo](docs/logo/logo-incharge.svg)
+![InCharge Logo](https://ezhmd.github.io/incharge/logo/logo-incharge.svg)
 
 Recharge InVision App with additional features
 
@@ -14,16 +14,16 @@ I'm a UI designer and I use InVision App a lot. InVision App is a great tool for
 
 - Collapse all sections
 - Expand all sections
-- Sort hotspot templates (only display) (coming soon)
+- Sort hotspot templates (only display) _(coming soon)_
 
 ### UI Fixes
 
-- Always displayed section tools (switchable) (coming soon)
-- Always displayed project-sync (switchable) (coming soon)
-- No transition (switchable) (coming soon)
-- Wider filename label (coming soon)
-- Wider section rename text input (coming soon)
-- Download current image (coming soon)
+- Always displayed section tools (switchable) _(coming soon)_
+- Always displayed project-sync (switchable)_(coming soon)_
+- No transition (switchable)_(coming soon)_
+- Wider filename label _(coming soon)_
+- Wider section rename text input _(coming soon)_
+- Download current image_(coming soon)_
 
 ## Installation
 
