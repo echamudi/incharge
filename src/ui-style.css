@@ -1,0 +1,63 @@
+#inchargeUI 
+{
+    position: fixed;
+    right: 10px;
+    top: 10px;
+    z-index: 1000;
+}
+
+.incharge-title 
+{
+    border-radius: 5px;
+
+    padding: 5px;
+    color: white;
+
+    width: 80px;
+    margin-left: auto;
+
+    font-weight: bold;
+    text-align: center;
+
+    box-shadow: 0px 2px 5px rgba(0,0,0,0.07);
+
+    background: #ff3366;
+}
+
+.incharge-title-margin-bottom {
+    height: 5px;
+}
+
+#inchargeDropdown 
+{
+    display: flex;
+    display: none;
+    padding: 5px;
+    flex-direction: column;
+
+    border-radius: 5px;
+    box-shadow: 0px 2px 5px rgba(0,0,0,0.07);
+    text-align: center;
+    
+    background: white;
+}
+
+#inchargeDropdown > button
+{
+    margin: 5px 0px;
+}
+
+.incharge-title:hover ~ #inchargeDropdown, 
+.incharge-title-margin-bottom:hover  ~ #inchargeDropdown, 
+#inchargeDropdown:hover 
+{
+    display: flex;
+}
+
+.incharge-button {
+    display: none;
+}
+
+.page_project .incharge-display-project {
+    display: block;
+}

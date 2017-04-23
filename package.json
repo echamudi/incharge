@@ -1,0 +1,27 @@
+{
+  "name": "incharge",
+  "version": "0.0.1",
+  "description": "Recharge InVision App with additional features",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://ezhmd@github.com/ezhmd/incharge.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "AGPL-3.0",
+  "bugs": {
+    "url": "https://github.com/ezhmd/incharge/issues"
+  },
+  "homepage": "https://github.com/ezhmd/incharge#readme",
+  "devDependencies": {
+    "@types/node": "^7.0.13",
+    "raw-loader": "^0.5.1",
+    "ts-loader": "^2.0.3",
+    "typescript": "^2.2.2",
+    "webpack": "^2.4.1"
+  }
+}
