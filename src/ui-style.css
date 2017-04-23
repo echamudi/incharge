@@ -1,5 +1,6 @@
 #inchargeUI 
 {
+    display: none;
     position: fixed;
     right: 10px;
     top: 10px;
@@ -59,5 +60,10 @@
 }
 
 .page_project .incharge-display-project {
+    display: block;
+}
+
+/* where to display the dropdown */
+.page_project #inchargeUI {
     display: block;
 }
