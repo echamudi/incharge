@@ -27,9 +27,9 @@ I'm a UI designer and I use InVision App a lot. InVision App is a great tool for
 
 ## Installation
 
-1. Install tampermonkey
-2. Open dist/incharge.user.js from gtihub
-3. Click install
+1. Install tampermonkey on your browser
+2. [Click here](https://github.com/ezhmd/incharge/raw/master/dist/incharge.user.js)
+3. A tampermonkey tab will be triggered, then click install
 
 ## Creator
 
