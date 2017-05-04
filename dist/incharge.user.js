@@ -85,7 +85,7 @@ module.exports = "#inchargeUI \n{\n    display: none;\n    position: fixed;\n   
 /* 1 */
 /***/ (function(module, exports) {
 
-module.exports = "<div id=\"inchargeUI\">\n    <div class=\"incharge-title\">InCharge⚡️</div>\n    <div class=\"incharge-title-margin-bottom\"></div>\n    <div id=\"inchargeDropdown\">\n        <p>with ❤️ by \n            <a href=\"https://github.com/ezhmd\" target=\"_blank\">ezhmd</a>\n        </p> \n    </div>\n</div>;\n"
+module.exports = "<div id=\"inchargeUI\">\n    <div class=\"incharge-title\">InCharge⚡️</div>\n    <div class=\"incharge-title-margin-bottom\"></div>\n    <div id=\"inchargeDropdown\">\n        <p>with ❤️ by \n            <a href=\"https://github.com/ezhmd\" target=\"_blank\">ezhmd</a>\n        </p> \n    </div>\n</div>"
 
 /***/ }),
 /* 2 */
