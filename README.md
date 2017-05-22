@@ -14,7 +14,7 @@ I'm a UI designer and I use InVision App a lot. InVision App is a great tool for
 
 - Collapse all sections
 - Expand all sections
-- Sort hotspot templates (only display) _(coming soon)_
+- Sort hotspot templates (Top Dropdown in build mode) (display only, sorted list isn't saved)
 
 ### UI Fixes
 

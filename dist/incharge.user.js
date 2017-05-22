@@ -77,18 +77,43 @@
 /************************************************************************/
 /******/ ([
 /* 0 */
-/***/ (function(module, exports) {
+/***/ (function(module, exports, __webpack_require__) {
 
-module.exports = "#inchargeUI \n{\n    display: none;\n    position: fixed;\n    right: 10px;\n    top: 10px;\n    z-index: 1000;\n}\n\n.incharge-title \n{\n    border-radius: 5px;\n\n    padding: 5px;\n    color: white;\n\n    width: 80px;\n    margin-left: auto;\n\n    font-weight: bold;\n    text-align: center;\n\n    box-shadow: 0px 2px 5px rgba(0,0,0,0.07);\n\n    background: #ff3366;\n}\n\n.incharge-title-margin-bottom {\n    height: 5px;\n}\n\n#inchargeDropdown \n{\n    display: flex;\n    display: none;\n    padding: 5px;\n    flex-direction: column;\n\n    border-radius: 5px;\n    box-shadow: 0px 2px 5px rgba(0,0,0,0.07);\n    text-align: center;\n    \n    background: white;\n}\n\n#inchargeDropdown > button\n{\n    margin: 5px 0px;\n}\n\n.incharge-title:hover ~ #inchargeDropdown, \n.incharge-title-margin-bottom:hover  ~ #inchargeDropdown, \n#inchargeDropdown:hover \n{\n    display: flex;\n}\n\n.incharge-button {\n    display: none;\n}\n\n.page_project .incharge-display-project {\n    display: block;\n}\n\n/* where to display the dropdown */\n.page_project #inchargeUI {\n    display: block;\n}"
+"use strict";
+
+Object.defineProperty(exports, "__esModule", { value: true });
+function forEach(array, callback, scope) {
+    for (var i = 0; i < array.length; i++) {
+        callback.call(scope, i, array[i]);
+    }
+}
+exports.forEach = forEach;
+;
+function sortUsingNestedText(parent, childSelector, keySelector) {
+    var items = parent.children(childSelector).sort(function (a, b) {
+        var vA = $(keySelector, a).text();
+        var vB = $(keySelector, b).text();
+        return (vA < vB) ? -1 : (vA > vB) ? 1 : 0;
+    });
+    parent.append(items);
+}
+exports.sortUsingNestedText = sortUsingNestedText;
+
 
 /***/ }),
 /* 1 */
 /***/ (function(module, exports) {
 
-module.exports = "<div id=\"inchargeUI\">\n    <div class=\"incharge-title\">InCharge⚡️</div>\n    <div class=\"incharge-title-margin-bottom\"></div>\n    <div id=\"inchargeDropdown\">\n        <p>with ❤️ by \n            <a href=\"https://github.com/ezhmd\" target=\"_blank\">ezhmd</a>\n        </p> \n    </div>\n</div>"
+module.exports = "#inchargeUI \n{\n    display: none;\n    position: fixed;\n    right: 10px;\n    top: 10px;\n    z-index: 1000;\n}\n\n.incharge-title \n{\n    border-radius: 5px;\n\n    padding: 5px;\n    color: white;\n\n    width: 80px;\n    margin-left: auto;\n\n    font-weight: bold;\n    text-align: center;\n\n    box-shadow: 0px 2px 5px rgba(0,0,0,0.07);\n\n    background: #ff3366;\n}\n\n.incharge-title-margin-bottom {\n    height: 5px;\n}\n\n#inchargeDropdown \n{\n    display: flex;\n    display: none;\n    padding: 5px;\n    flex-direction: column;\n\n    border-radius: 5px;\n    box-shadow: 0px 2px 5px rgba(0,0,0,0.07);\n    text-align: center;\n    \n    background: white;\n}\n\n#inchargeDropdown > button\n{\n    margin: 5px 0px;\n}\n\n.incharge-title:hover ~ #inchargeDropdown, \n.incharge-title-margin-bottom:hover  ~ #inchargeDropdown, \n#inchargeDropdown:hover \n{\n    display: flex;\n}\n\n.incharge-button {\n    display: none;\n}\n\n/* where to display the buttons */\n.page_project .incharge-display-project,\n.build-mode .incharge-display-build\n{\n    display: block;\n}\n\n/* where to display the dropdown */\n.page_project #inchargeUI,\n.build-mode #inchargeUI {\n    display: block;\n} "
 
 /***/ }),
 /* 2 */
+/***/ (function(module, exports) {
+
+module.exports = "<div id=\"inchargeUI\">\n    <div class=\"incharge-title\">InCharge⚡️</div>\n    <div class=\"incharge-title-margin-bottom\"></div>\n    <div id=\"inchargeDropdown\">\n        <p>with ❤️ by \n            <a href=\"https://github.com/ezhmd\" target=\"_blank\">ezhmd</a>\n        </p> \n    </div>\n</div>"
+
+/***/ }),
+/* 3 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -121,33 +146,18 @@ exports.Actions = Actions;
 
 
 /***/ }),
-/* 3 */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-Object.defineProperty(exports, "__esModule", { value: true });
-function forEach(array, callback, scope) {
-    for (var i = 0; i < array.length; i++) {
-        callback.call(scope, i, array[i]);
-    }
-}
-exports.forEach = forEach;
-;
-
-
-/***/ }),
 /* 4 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
 
 Object.defineProperty(exports, "__esModule", { value: true });
-var actions_class_1 = __webpack_require__(2);
-var functions_1 = __webpack_require__(3);
+var actions_class_1 = __webpack_require__(3);
+var functions_1 = __webpack_require__(0);
+var functions_2 = __webpack_require__(0);
 // Load SCSS and HTML
-var uiTemplate = __webpack_require__(1);
-var uiStyle = __webpack_require__(0);
+var uiTemplate = __webpack_require__(2);
+var uiStyle = __webpack_require__(1);
 // Add UI to body
 document.body.insertAdjacentHTML('afterbegin', "\n    <style>\n        " + uiStyle + "\n    </style>\n    " + uiTemplate + "\n");
 // InCharge Actions!!
@@ -171,6 +181,14 @@ actions
         functions_1.forEach(document.querySelectorAll('.expand'), function (index, value) {
             value.click();
         });
+    }
+})
+    .registerAction({
+    id: "sortHotspotTemplates",
+    label: "Sort Hotspot Templates (Top Dropdown)",
+    page: "build",
+    method: function () {
+        functions_2.sortUsingNestedText($('#hotspot-templates'), 'li', '[ng-bind="template.name"]');
     }
 });
 actions.render();

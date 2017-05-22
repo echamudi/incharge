@@ -1,6 +1,7 @@
 import { Actions } from "./actions.class";
 
 import { forEach } from "./functions";
+import { sortUsingNestedText } from "./functions";
 
 // Load SCSS and HTML
 
@@ -44,6 +45,16 @@ actions
                 forEach(document.querySelectorAll('.expand'), (index: any, value: any) => {
                     value.click();
                 });
+            }
+        }    
+    )
+    .registerAction(
+        {
+            id      : "sortHotspotTemplates",
+            label   : "Sort Hotspot Templates (Top Dropdown)",
+            page    : "build",
+            method  : () => {
+                sortUsingNestedText($('#hotspot-templates'), 'li', '[ng-bind="template.name"]')
             }
         }    
     );

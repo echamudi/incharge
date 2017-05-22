@@ -59,11 +59,15 @@
     display: none;
 }
 
-.page_project .incharge-display-project {
+/* where to display the buttons */
+.page_project .incharge-display-project,
+.build-mode .incharge-display-build
+{
     display: block;
 }
 
 /* where to display the dropdown */
-.page_project #inchargeUI {
+.page_project #inchargeUI,
+.build-mode #inchargeUI {
     display: block;
-}
+} 
