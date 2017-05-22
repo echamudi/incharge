@@ -8,6 +8,10 @@ Recharge InVision App with additional features
 
 I'm a UI designer and I use InVision App a lot. InVision App is a great tool for making prototypes but there are some missing useful features in its UI. This project contains several hacks that will save my (and might be your) time in InVision App.
 
+## Caution
+
+This plugin might break your InVision project. Use it at your own rish. But, I've been using it on a big InVision project (500+ screens, 60+ hotspot templates, 35+ screen groups) without any problem 😃.
+
 ## The Hacks
 
 ### Actions
