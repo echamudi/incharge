@@ -59,6 +59,17 @@
     display: none;
 }
 
+/* Put the button on left on some pages */
+
+.build-mode #inchargeUI {
+    right: auto;
+    left: 10px;
+}
+.build-mode .incharge-title  {
+    margin-left: 0;
+    margin-right: auto;
+}
+
 /* where to display the buttons */
 .page_project .incharge-display-project,
 .build-mode .incharge-display-build
