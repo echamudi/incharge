@@ -12,18 +12,23 @@ I'm a UI designer and I use InVision App a lot. InVision App is a great tool for
 
 ### Actions
 
-- Collapse all sections
-- Expand all sections
-- Sort hotspot templates (Top Dropdown in build mode) (display only, sorted list isn't saved)
+- Screen List
+    - Collapse all sections
+    - Expand all sections
+- Build Mode
+    - Sort hotspot templates (Top Dropdown) (display only, sorted list isn't saved)
 
 ### UI Fixes
 
-- Always displayed section tools (switchable) _(coming soon)_
-- Always displayed project-sync (switchable) _(coming soon)_
-- No transition (switchable) _(coming soon)_
-- Wider filename label _(coming soon)_
-- Wider section rename text input _(coming soon)_
-- Download current image _(coming soon)_
+- General
+    - No transition (switchable) _(coming soon)_
+- Screen List
+    - Always displayed section tools (switchable) _(coming soon)_
+    - Always displayed project-sync (switchable) _(coming soon)_
+    - Wider filename label _(coming soon)_
+    - Wider section rename text input _(coming soon)_
+- Preview Mode
+    - Download current image _(coming soon)_
 
 ## Installation
 
