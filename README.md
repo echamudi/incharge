@@ -10,7 +10,7 @@ I'm a UI designer and I use InVision App a lot. InVision App is a great tool for
 
 ## Caution
 
-This plugin might break your InVision project. Use it at your own rish. But, I've been using it on a big InVision project (500+ screens, 60+ hotspot templates, 35+ screen groups) without any problem 😃.
+This plugin might break your InVision project. Use it at your own risk. But, I've been using it on a big InVision project (500+ screens, 60+ hotspot templates, 35+ screen groups) without any problem 😃.
 
 ## The Hacks
 
@@ -20,7 +20,7 @@ This plugin might break your InVision project. Use it at your own rish. But, I'v
     - Collapse all sections
     - Expand all sections
 - Build Mode
-    - Sort hotspot templates (Top Dropdown) (display only, sorted list isn't saved)
+    - Sort hotspot templates (Top Dropdown) (display only, sorted list won't be saved)
 
 ### UI Fixes
 
