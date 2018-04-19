@@ -25,7 +25,8 @@
     background: #ff3366;
 }
 
-.incharge-title-margin-bottom {
+.incharge-title-margin-bottom 
+{
     height: 5px;
 }
 
@@ -55,17 +56,20 @@
     display: flex;
 }
 
-.incharge-button {
+.incharge-button 
+{
     display: none;
 }
 
 /* Put the button on left on some pages */
 
-.build-mode #inchargeUI {
+.build-mode #inchargeUI 
+{
     right: auto;
     left: 10px;
 }
-.build-mode .incharge-title  {
+.build-mode .incharge-title  
+{
     margin-left: 0;
     margin-right: auto;
 }
@@ -79,13 +83,41 @@
 
 /* where to display the dropdown */
 .page_project #inchargeUI,
-.build-mode #inchargeUI {
+.build-mode #inchargeUI 
+{
     display: block;
 } 
 
 /* No ellipses */
-#build .fancy-dropdown h2 {
+#build .fancy-dropdown h2,
+.project .screen .project-info .filename
+{
     text-overflow: initial;
     white-space: unset;
     word-wrap: break-word;
+}
+
+#bottom_bar .project-navigation a 
+{
+    text-overflow: initial;
+    word-wrap: normal;
+}
+
+/* Always on file name */
+.project .screen.grid .project-info .filename 
+{
+    display: block !important;
+    margin-top: 5px;
+}
+
+/* Always on updated date */
+.updated-at 
+{
+    display: block !important;
+}
+
+/* Bigger screen details */
+.project .screen.grid .project-info 
+{
+    height: 150px;
 }
