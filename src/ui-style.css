@@ -121,3 +121,9 @@
 {
     height: 150px;
 }
+
+/* Wider divider label input */
+.dividerLabelInput 
+{
+    width: 900px !important;
+}

@@ -29,10 +29,10 @@ This plugin might break your InVision project. Use it at your own risk. But, I'v
 - Screen List
     - Always displayed file name
     - Always displayed date
+    - Wider divider label input 
     - Always displayed section tools (switchable) _(coming soon)_
     - Always displayed project-sync (switchable) _(coming soon)_
     - Wider filename label _(coming soon)_
-    - Wider section rename text input _(coming soon)_
 - Preview Mode
     - Download current image _(coming soon)_
 - Build Mode
