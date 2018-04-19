@@ -82,3 +82,10 @@
 .build-mode #inchargeUI {
     display: block;
 } 
+
+/* No ellipses */
+#build .fancy-dropdown h2 {
+    text-overflow: initial;
+    white-space: unset;
+    word-wrap: break-word;
+}

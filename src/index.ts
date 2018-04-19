@@ -3,6 +3,8 @@ import { Actions } from "./actions.class";
 import { forEach } from "./functions";
 import { sortUsingNestedText } from "./functions";
 
+declare var $: any;
+
 // Load SCSS and HTML
 
 let uiTemplate = require("raw-loader!./ui-template.html");

@@ -25,6 +25,7 @@ This plugin might break your InVision project. Use it at your own risk. But, I'v
 ### UI Fixes
 
 - General
+    - No ellipses
     - No transition (switchable) _(coming soon)_
 - Screen List
     - Always displayed section tools (switchable) _(coming soon)_
