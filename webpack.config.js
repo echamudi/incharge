@@ -25,6 +25,7 @@ module.exports = {
 // @author       https://github.com/ezhmd
 // @match        https://projects.invisionapp.com/*
 // @grant        none
+// @version      2
 // ==/UserScript==
         `, 
         entryOnly: true,
