@@ -48,8 +48,6 @@ This plugin might break your InVision project. Use it at your own risk. But, I'v
 
 * **Ezzat Chamudi** - *Initial work* - [ezhmd](https://github.com/ezhmd)
 
-See also the list of [contributors](https://github.com/ezhmd/poster-egg/contributors) who participated in this project.
-
 ## Licenses
 
 InCharge code released under [AGPLv3](http://www.gnu.org/licenses/agpl-3.0.html). 
