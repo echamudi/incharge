@@ -25,16 +25,16 @@ This plugin might break your InVision project. Use it at your own risk. But, I'v
 ### UI Fixes
 
 - General
-    - No transition (switchable) _(coming soon)_
+    - No transition (switchable) _(planned)_
 - Screen List
     - Always displayed file name
     - Always displayed date
     - Wider divider label input 
-    - Always displayed section tools (switchable) _(coming soon)_
-    - Always displayed project-sync (switchable) _(coming soon)_
-    - Wider filename label _(coming soon)_
+    - Always displayed section tools (switchable) _(planned)_
+    - Always displayed project-sync (switchable) _(planned)_
+    - Wider filename label _(planned)_
 - Preview Mode
-    - Download current image _(coming soon)_
+    - Download current image _(planned)_
 - Build Mode
     - No ellipses
 
