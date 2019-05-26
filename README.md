@@ -46,7 +46,7 @@ This plugin might break your InVision project. Use it at your own risk. But, I'v
 
 ## Authors
 
-* **Ezzat Chamudi** - *Initial work* - [ezhmd](https://github.com/ezhmd)
+* **Ezzat Chamudi** - [ezhmd](https://github.com/ezhmd)
 
 ## Licenses
 
