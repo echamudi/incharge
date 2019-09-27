@@ -82,5 +82,5 @@ Code and documentation copyright 2019 the [InCharge Project Authors](https://git
 
 InCharge code is licensed under [MPL-2.0](https://www.mozilla.org/en-US/MPL/2.0/). Images, logos, docs, and articles in this InCharge project are released under [CC-BY-SA-4.0](https://creativecommons.org/licenses/by-sa/4.0/legalcode).
 
-Libraries, dependencies, and tools used in this project aret tied with their own licenses respectively.
+Libraries, dependencies, and tools used in this project are tied with their own licenses respectively.
 
