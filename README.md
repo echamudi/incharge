@@ -46,6 +46,28 @@ This plugin might break your InVision project. Use it at your own risk. But, I'v
 2. [Click here](https://github.com/ezhmd/incharge/raw/master/dist/incharge.user.js)
 3. A tampermonkey tab will be triggered, then click install
 
+## Development
+
+You need node.js installed in your computer.
+
+### Installation
+
+```sh
+npm install
+```
+
+### Developing
+
+All you need to edit are all files inside `src` folder.
+
+### Building
+
+```sh
+npx webpack --mode=development
+```
+
+Always use `--mode=development` even for production.
+
 ## Contributing
 
 Make sure your contributions are compatible with the license of this code.
@@ -56,7 +78,7 @@ Make sure your contributions are compatible with the license of this code.
 
 ## License
 
-Code and documentation copyright 2019 the [InCharge Authors](https://github.com/ezhmd/incharge/graphs/contributors). 
+Code and documentation copyright 2019 the [InCharge Project Authors](https://github.com/ezhmd/incharge/graphs/contributors). 
 
 InCharge code is licensed under [MPL-2.0](https://www.mozilla.org/en-US/MPL/2.0/). Images, logos, docs, and articles in this InCharge project are released under [CC-BY-SA-4.0](https://creativecommons.org/licenses/by-sa/4.0/legalcode).
 
