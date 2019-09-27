@@ -44,14 +44,19 @@ This plugin might break your InVision project. Use it at your own risk. But, I'v
 2. [Click here](https://github.com/ezhmd/incharge/raw/master/dist/incharge.user.js)
 3. A tampermonkey tab will be triggered, then click install
 
+## Contributing
+
+Make sure your contributions are compatible with the license of this code.
+
 ## Authors
 
 * **Ezzat Chamudi** - [ezhmd](https://github.com/ezhmd)
 
-## Licenses
+## License
 
-InCharge code released under [AGPLv3](http://www.gnu.org/licenses/agpl-3.0.html). 
+Code and documentation copyright 2019 the [{{ project_name }} Authors](). 
 
-Images, logos, docs, and articles released under [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/). 
+InCharge code is licensed under [MPL-2.0](https://www.mozilla.org/en-US/MPL/2.0/). Images, logos, docs, and articles in this InCharge project are released under [CC-BY-SA-4.0](https://creativecommons.org/licenses/by-sa/4.0/legalcode).
 
-Libraries, dependencies, and tools used in this project tied with their own licenses respectively.
+Libraries, dependencies, and tools used in this project aret tied with their own licenses respectively.
+
