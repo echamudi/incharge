@@ -4,17 +4,19 @@
 
 Recharge InVision App with additional features
 
-## What?
+## About This Project
+
+### What?
 
 I'm a UI designer and I use InVision App a lot. InVision App is a great tool for making prototypes but there are some missing useful features in its UI. This project contains several hacks that will save my (and might be your) time in InVision App.
 
-## Caution
+### Caution
 
 This plugin might break your InVision project. Use it at your own risk. But, I've been using it on a big InVision project (500+ screens, 60+ hotspot templates, 35+ screen groups) without any problem 😃.
 
-## The Hacks
+### The Hacks
 
-### Actions
+#### Actions
 
 - Screen List
     - Collapse all sections
@@ -22,7 +24,7 @@ This plugin might break your InVision project. Use it at your own risk. But, I'v
 - Build Mode
     - Sort hotspot templates (Top Dropdown) (display only, sorted list won't be saved)
 
-### UI Fixes
+#### UI Fixes
 
 - General
     - No transition (switchable) _(planned)_
@@ -38,7 +40,7 @@ This plugin might break your InVision project. Use it at your own risk. But, I'v
 - Build Mode
     - No ellipses
 
-## Installation
+## Usage
 
 1. Install tampermonkey on your browser
 2. [Click here](https://github.com/ezhmd/incharge/raw/master/dist/incharge.user.js)
@@ -54,7 +56,7 @@ Make sure your contributions are compatible with the license of this code.
 
 ## License
 
-Code and documentation copyright 2019 the [{{ project_name }} Authors](). 
+Code and documentation copyright 2019 the [InCharge Authors](https://github.com/ezhmd/incharge/graphs/contributors). 
 
 InCharge code is licensed under [MPL-2.0](https://www.mozilla.org/en-US/MPL/2.0/). Images, logos, docs, and articles in this InCharge project are released under [CC-BY-SA-4.0](https://creativecommons.org/licenses/by-sa/4.0/legalcode).
 
