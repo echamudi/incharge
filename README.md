@@ -58,7 +58,7 @@ npm install
 
 ### Developing
 
-All you need to edit are all files inside `src` folder.
+All you need to edit are the files inside `src` folder.
 
 ### Building
 
@@ -66,7 +66,7 @@ All you need to edit are all files inside `src` folder.
 npx webpack --mode=development
 ```
 
-Always use `--mode=development` even for production.
+Always use `--mode=development` even for production. Commit the compiled file (`dist/incharge.user.js`).
 
 ## Contributing
 
