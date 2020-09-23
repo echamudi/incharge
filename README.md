@@ -1,5 +1,7 @@
 # InCharge⚡️
 
+> ⚠️ Deprecated: No longer works with the latest Invision update
+
 ![InCharge Logo](https://ezhmd.github.io/incharge/logo/logo-incharge.svg)
 
 Recharge InVision App with additional features
